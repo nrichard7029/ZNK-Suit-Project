@@ -2,65 +2,42 @@
 <script src="./Sources/material.min.js"></script>
 <link rel="stylesheet" href="./Sources/icon.css">
 
-<style>
-.demo-layout-transparent {
-  background: url('./background/homepage2/HomePage.jpg') center / cover;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  color: white;
-}
-</style>
 
-<!-- Uses a transparent header that draws on top of the layout's background -->
-<style>
-.demo-layout-transparent {
-  background: url('./background/homepage2/homepage.jpg') center / cover;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: black;
-}
-</style>
-
-<div class="demo-layout-transparent mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+  <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title"<font size="10">Pricing of the Z.N.K.</span>
 
+      <span class="mdl-layout-title">Pricing for ZNK</span>
+    </div>
+
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Materials</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">Total Cost</a>
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title"></span>
-    </nav>
+    <span class="mdl-layout-title">Title</span>
   </div>
   <main class="mdl-layout__content">
-      <p> <p> <p> <p> 
-       <font size="7">
-                          Pricing of the Z.N.K  <p>
- 
-                      <font size="4">
+    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+      <div class="page-content">
+   <font size="6">
                           1. Titanium- $30 per pound  <p>
                           Suit and airtank <p>
                           2. Rubber suit- $2.18 per pound <p> 
-  <font size="3">
-  (including pocket for airtank and lifejacket mechanism)  <p>
-         <p>
-             <font size="7">
-                          Total cost of the Z.N.K.
-             <p> 
-                 <font size="4">
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content">
                  $22,500 not including air tank <p>
                  $23,500 including air tank 
-                   
-                   :p
-                          
-                          
-              
-       <p> 
-      
+  
+      </div>
+    </section>
   </main>
 </div>
+  
+  <font size="3">
+
+
